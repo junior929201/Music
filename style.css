@@ -1,0 +1,143 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: auto;
+	background-color: #333;
+	color:#ddd;
+	font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+img{
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.descricao{
+	width: 300px;
+	
+
+}
+h2{
+	margin-bottom: 4px;
+
+}
+
+.duracao{
+	width: 300px;
+	margin-top: 20px;
+}
+
+.barra{
+	width: 300px;
+	height: 6px;
+	border: 1px solid;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	animation-name: change-color;
+	animation-duration: 3s;
+	animation-iteration-count: infinite ;
+}
+@keyframes change-color{
+	0% {border-color: #316cf4;}
+	40% {border-color: #009e33;}
+	100% {border-color: #e65f5f;}
+}
+
+
+progress{
+	height: 6px;
+	width: 0%;
+	background-color: #333;
+	
+}
+
+
+
+.ponto{
+	width:20px;
+	height: 20px;
+	background-color: #eee;
+	border-radius: 50%;
+	margin-left: -10px;
+}
+
+.tempo{
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+
+.player{
+	width: 300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.botao-play, .botao-pause{
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.setas{
+	font-size: 30px;
+}
+
+.botao-pause{
+	display: none;
+}
+.menu{
+	position: relative;
+	display: flex;
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	top: 30px;
+	left: 135px;
+}
+
+main{
+	display:none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 10px 20px;
+	width: 100px;
+	height: 100%;
+	background: #000;
+	align-items: relative;
+	margin:0;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	margin: -20px;
+}
+li{
+	color: #fff;
+	list-style: none;
+}
+.sair{
+	position: absolute;
+	right: 120px;
+	top: 5px;
+	border-radius: 5px;
+}
+.sairDiv{
+	display: none ;
+}
+
+.container{
+	position: fixed;
+}
